@@ -43,13 +43,26 @@ $gerador = $gerador->gerar();
 
 echo $gerador->number_formatted;
 ```
++ <b>GERAR CNS</B>
+```php
+
+include 'Class/GeradorClass.php';
+
+$token = 'Zq7Up1bLA1C9hTACQgr5c5eGuOtOYKVflcNZNhff';
+
+$gerador = new Gerador($token);
+$gerador->type = "cnS";
+$gerador = $gerador->gerar();
+
+echo $gerador->number_formatted;
+```
 
 ## O RESULTADO SERÁ
 + CPF <br />
 ![alt text](https://i.imgur.com/06vQPE2.png)
 
-+ CPNJ <br />
++ CNPJ <br/>
 ![alt text](https://i.imgur.com/fJp5f7Z.png)
 
-+ CNS <br />
++ CNS <br/>
 ![alt text](https://i.imgur.com/HPMTLBy.png)
